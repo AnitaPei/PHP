@@ -1,0 +1,362 @@
+*{
+	padding: 0px;
+	margin:0px;
+	list-style: none;
+}
+
+.active{
+	font-size:18px;
+	font-weight: bold;
+	margin-right: 10px;
+}
+.active a{
+	color: #000;
+}
+.active a:hover{
+	color: #f00;
+	text-decoration: unset;
+}
+.col-bottom{/*中*/
+	border-top: 1px solid #ccc;
+	
+}
+.col-left{/*中左*/
+
+}
+.left-h-1{
+	text-align: center;
+	padding-top: 10px;
+	font-weight: bold;
+	
+}
+.left-li-1{
+	line-height: 30px;
+	border-bottom:1px solid #ccc;
+
+}
+.left-li-1 a{
+	color: #000;
+}
+.left-li-1 a:hover{
+	color: #f00;
+	text-decoration: unset;
+}
+.left-li-sp{
+	float: right;
+	font-size: 12px;
+}
+.left-li-sp a{
+	color: #888;
+}
+.left-li-sp a:hover{
+	color: #000;
+	text-decoration: unset;
+}
+.col-center{/*中中*/
+	
+
+}
+.col-center-top{
+	margin-top: 50px;
+}
+.center-top-img{
+	width: 80px;
+	height:100px;
+}
+.center-top-p1{
+	text-align: center;
+}
+.center-top-p2{
+	text-align: center;
+}
+.center-top-p1 a{
+	font-size: 18px;
+	color: #000;
+	font-weight: bold;
+}
+.center-top-p1 a:hover{
+	color: #f00;
+	text-decoration:unset;
+
+}
+.center-bottom{
+	margin-top:15px;
+	border-top: 1px solid #ccc;
+	padding-top: 15px;
+}
+.center-bottom-life{
+	width: 50px;
+	height: 50px;
+	background-color: #f00;
+	float: left;
+}
+.center-bottom-h4{
+	width: 40px;
+	line-height: 18px;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+	background-color: #f00;
+
+}
+.center-bottom-right{/*中下*/
+
+	margin-left: 80px; 
+}
+.center-bottom-li{
+	line-height: 30px;
+	float: left;
+
+}
+.center-bottom-li a{
+	font-size: 16px;
+	color: #000;
+}
+.center-bottom-li a:hover{
+	color: #f00;
+	text-decoration: unset;
+}
+.center-bottom-span{
+	font-size: 14px;
+	color: #888;
+}
+.col-right{/*中右*/
+
+
+}
+.col-right-top{/*右上*/
+
+}
+.col-right-p1{
+	width: 60px;
+	color: #fff;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 12px;
+	background-color: #bf2c24;
+}
+.col-right-sp1{
+	font-size: 12px;
+}
+.col-right-sp1 a{
+
+}
+.col-right-sp1 a:hover{
+	color: #06f;
+	text-decoration: unset;
+}
+.col-right-sp2{
+	font-size: 12px;
+}
+.col-right-sp2 a{
+	color: #888;
+}
+.col-right-sp2 a:hover{
+	color: #000;
+	text-decoration: unset;
+}
+.col-right-cont{
+
+}
+.col-right-p2{
+	width: 60px;
+	color: #fff;
+	margin-top: 20px;
+	text-align: center;
+	font-size: 12px;
+	background-color: #eb6b0d;
+}
+
+.col-right-li{
+	line-height: 26px;
+	font-size: 14px;
+
+}
+.col-right-li a{
+	color: #000;
+}
+.col-right-li a:hover{
+	color: #f00;
+
+	text-decoration: unset;
+}
+.xinshu-top{
+	border-bottom: 1px solid #ccc;
+	margin-top: 20px;
+}
+.xinshu{
+	font-size: 24px;
+	font-weight: 900;
+}
+.xinshu-border-bom{
+	border-bottom: 1px solid #ccc;
+}
+.xuanhuan-li{
+ 	margin-top: 15px;
+}
+.xuanhuan-img{
+	float: left;
+}
+.xuanhuan-li-p1{
+	font-size: 18px;
+	font-weight: 700;
+}
+.xuanhuan-li-p1 a{
+	color: #000;
+}
+.xuanhuan-li-p1 a:hover{
+	color: #f00;
+}
+.xuanhuan-li-p2{
+	font-size: 12px;
+
+}
+.xuanhuan-li-sp a{
+	color: #ccc;
+}
+.xuanhuan-li-sp a:hover{
+	color: #000;
+}
+.xuanhuan-li-sp1{
+	border: 1px solid #ccc;
+	color: #ccc;
+	float: right;
+}
+.xuanhuan-li-img{
+	width: 20px;
+}
+.xuanhuan-li-sp2{
+	border: 1px solid #f00;
+	color: #f00;
+	float: right;
+	margin-right: 10px;
+}
+.qianyue-top{
+	border-bottom: 1px solid #ccc;
+	margin-top: 20px;
+}
+.qianyue{
+	font-size: 18px;
+	font-weight: 900;
+}
+.col-md-3 ul{
+	margin-top: 20px;
+}
+
+
+.col-md-3 ul li{
+	list-style: none;
+}
+.col-md-3 ul li .books{
+	height: 180px;
+}
+.col-md-3 ul li .books .book-info{
+	float: left;
+}
+.col-md-3 ul li .book-info h3{
+	border: 1px solid #fff;
+	background-color: #BF2C24;
+	width: 40px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+}
+.book-info .digital{
+	color: #BF2C24;
+	font-size: 11px;
+}
+.book-info h4{
+	font-size: 18px;
+	font-weight: 600;
+}
+.book-info h4 a{
+	color: #000;
+}
+.book-info h4 a:hover{
+	color: #f00;
+}
+.book-info .digital strong{
+	  font-size: 17px;
+}
+.book-info .digital span{
+	font-size: 12px;
+	font-weight: 600;
+}
+.book-info .kind a{
+	color: #A6A6A6;
+	text-decoration: none;
+}
+.book-info .kind .type:hover{
+	color: red;
+}
+.book-info .kind .writer:hover{
+	color: #000;
+}
+.col-md-3 ul li .book-cover{
+	float: right;
+}
+.col-md-3 ul li .bookname{
+
+	height: 30px;
+	line-height: 30px;
+}
+
+.bookname .num-div{
+	float: left;
+	margin-top: 6px;
+}
+.bookname .name-div{
+	margin-left: 26px;
+	border-top: 1px solid #ccc;
+
+}
+.bookname .name-div .name{
+	color: #000;
+}
+.bookname .name-div .name:hover{
+	color: red;
+}
+.bookname .name-div .num{
+
+	float: right;
+	color: #999;
+	font-size: 13px;
+}
+.bookname .num-div .num3{
+	margin-top: 5px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	border: 1px solid #fff;
+	background-color: #E6BF25;
+	font-weight: bold;
+	color: #fff;
+}
+.bookname .num-div .num4{
+	margin-top: 5px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+	border: 1px solid #fff;
+	background-color: #EDEDED;
+	font-weight: bold;
+	color: #666;
+}
+.pagination{
+	float: right;
+}
+.pagination li a{
+	color: #000;
+}
+.pagination li a:hover{
+	color: #f00;
+}
+
+

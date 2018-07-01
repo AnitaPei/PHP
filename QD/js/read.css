@@ -1,0 +1,322 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;text-decoration:none;list-style:none;}
+/* background-attachment:fixed; 设置 背景图片 不会随着 鼠标滚动 而 滚动 */
+.all{border:0px solid #f00;background-image:url(../images/read/all_background.png);background-attachment:fixed;}
+a{color:#000;}
+/*头部*/
+.top{height:60px;background-color:#fff;background:rgba(255,255,255,0.4);font-family:微软雅黑;}
+/* 头部 的左边部分*/
+.top_left{border:0px solid #000;}
+.top_left a{color:#000;}
+.logo{float:left;}	/* 起点 logo 起点中文网 图标 */
+.logo_qidian{border:0px solid #f00;display:inline-block;margin:-12px -17px;float:left;}
+
+.top_img-1,.top_img-2,.top_img-3,.top_img-4{float:left;}
+/* 头部导航的 a 标签 */
+.public_li .public_a{margin-top:2px;border:0px solid #0FF;}
+.logo .public_a{margin-top:2px;}
+.top-left_li4 .public_a{margin-top:2px;}
+
+.top_img-1{margin:13px 0 0 5%;}	/* 起点 logo 图标 */
+.logo_qidian .top_img-2{margin:20px 15px;}	/* 起点中文网 */
+.arrow{width:8px;height:4px;float:left;margin:27px -5px; background-image:url(../images/read/open_icon.png);display:inline-block;}	/* 起点中文网 旁的箭头 */
+.logo:hover .arrow{background-image:url(../images/read/close_icon.png);}
+/* 起点中文网 的下拉菜单 */
+.logo_qidian_childmenu{position:relative;left:0px;top:-1px;z-index:199;}
+.logo_qidian_childmenu ul{height:100px;border:0px solid #0FF;font-size:14px;background-color:#fff;}
+.logo_qidian_childmenu li{height:33px;border:0px solid #0FF;line-height:33px;padding:0 10px;}
+.logo_qidian_childmenu ul a{text-decoration:none;height:33px;display:inline-block;}
+.logo_qidian_childmenu ul a:hover li{background-color:#fafafa;}
+
+/* 手机阅读  最近阅读  快速导航 */
+.top-left_li2,.top-left_li3,.top-left_li4{font-size:14px;float:left;text-align:center;}
+.top-left_li2 a,.top-left_li3 a{text-decoration:none;}
+.top-left_li2 .public_a,.top-left_li3 .public_a,.top-left_li4 .public_a{line-height:35px;}
+.top-left_li2{margin-left:20px;}  /* 手机阅读 */
+/* 手机阅读 的下拉菜单 */
+.top-left_li2 .phoneread_menu{width:223px;height:330px;background-color:#fff;position:relative;z-index:99;top:0px;}
+/* 二维码图片 */
+.top-left_li2 .phoneread_menu img{width:105px;height:105px;padding:10px;border:1px solid #d8d8d8;}
+/* 苹果 下载 、安卓 下载 */
+.top-left_li2 .phoneread_menu .apple,.android{width:175px;height:42px;border:1px solid #d8d8d8;font-size:12px;color:#262626;background-color:#f7f7f7;margin:23px; line-height:42px;}
+.apple a,.android a{display:inline-block;width:175px;height:42px;}
+/* 苹果 下载 */
+.phoneread_menu .apple span{display:inline-block;width:20px;height:25px; background-image:url(../images/read/apple_icon.png);margin:5px -5px 0 30px;float:left;}
+.apple a:hover{color:#ed4259;}
+.apple:hover span{background-image:url(../images/read/red_apple_icon.png);}
+/* 安卓 下载 */
+.phoneread_menu .android span{display:inline-block;width:21px;height:25px; background-image:url(../images/read/android_icon.png);margin:5px -20px 0 30px;float:left;}
+.android a:hover{color:#ed4259;}
+.android:hover span{background-image:url(../images/read/red_android_icon.png);}
+
+/* 最近阅读 的下拉菜单 */
+.top-left_li3 .recentlyread_menu{width:402px;height:190px;position:relative;z-index:100;top:-2px; background-color:#fff;}
+.recentlyread_menu .recentlyread_info{width:402px;height:140px;border:0px solid #f00;}
+/* 图书图片 */
+.recentlyread_info .book_img{width:52px;height:94px;margin:25px;float:left;}
+.recentlyread_info img{width:52px;height:94px;}
+.recentlyread_menu .recentlyread_info:hover{background-color:#f2f2f2;}
+/* 图书 有关信息 */
+.recentlyread_info .recentlyread_bookinfo{width:295px;height:94px;border:0px solid #0ff;float:left;margin-top:25px;font-family:宋体; overflow:hidden;}
+.recentlyread_bookinfo p{width:295px;border:0px solid #0ff;float:left;margin:0;}
+/* 书名 */
+.recentlyread_bookinfo .bookinfo_title{font-size:17px;height:25px;font-family:微软雅黑;line-height:25px;margin-top:15px;}
+.recentlyread_bookinfo .bookinfo_title a{width:295px;height:25px;margin:0px; text-align:left;color:#262626;}
+.recentlyread_bookinfo .bookinfo_title a:hover{color:#ed4259;}
+/* 最新章节 */
+.recentlyread_bookinfo .bookinfo_new{font-size:12px;height:25px;line-height:25px;color:#666;text-align:left;}
+.recentlyread_bookinfo .bookinfo_new a{color:#3f5a93;margin:0px;width:165px;height:25px;}
+.recentlyread_bookinfo .bookinfo_new a:hover{color:#2972cc;}
+/* 看到 */
+.recentlyread_bookinfo .bookinfo_see{font-size:13px;height:25px;line-height:25px;color:#666;text-align:left;}
+.recentlyread_bookinfo .bookinfo_see a{margin:0px;width:140px;height:25px;}
+.recentlyread_bookinfo .bookinfo_see a:hover{color:#ed4259;}
+/* 继续阅读 */
+.bookinfo_see font{width:60px;height:25px;font-size:13px;margin:0px;float:right;display:inline-block;}
+.bookinfo_see font a{color:#bf2c24;}
+
+/* 最近阅读 的下拉菜单下的 查看全部 */
+.recentlyread_menu .see_all{width:402px;height:35px;background-color:#f2f2f2; font-size:13px;font-family:宋体;color:#666;line-height:35px;}
+.recentlyread_menu a{display:inline-block;width:402px;height:35px;margin-top:15px;}
+.recentlyread_menu .see_all:hover{color:#ed4259;}
+
+/* 快速导航 */
+.top-left_li4 a{text-decoration:none;}
+.top_img-4{margin:13px 7px 0 0px;}  /* 快速导航 前的图片 */
+
+/* 快速导航 的下拉菜单 */
+.top-left_li4 .quicknav_menu{width:440px;height:275px;background-color:#fff;position:relative;z-index:101;top:-2px;}
+/* 快速导航 的下拉菜单 分类频道 */
+.quicknav_menu .quicknav_onelist{width:440px;height:185px;border:0px solid #0FF;}
+.quicknav_onelist img{ float:left;margin:20px 0 8px 20px;}
+.quicknav_onelist ul,.quicknav_twolist ul{width:440px;height:130px;border:0px solid #f00;float:left;}
+.quicknav_onelist ul li{float:left;margin:-4px 20px;}
+.quicknav_onelist ul .quadratic_element{margin-right:8px;}
+.quicknav_onelist ul li a:hover,.quicknav_twolist  ul li a:hover{color:#ed4259;}
+
+/* 快速导航 的下拉菜单 其它 */
+.quicknav_menu .quicknav_twolist{width:440px;height:90px;border:0px solid #0FF;}
+.quicknav_twolist img{float:left;margin:20px 0 0 20px;}
+.quicknav_twolist li{float:left;margin:-4px 20px;}
+
+/* 头部 的右边部分*/
+.top-right{border:0px solid #0FF;float:left;}
+/* 头部 的右边部分 的 a 标签 */
+.top-right a{float:left;font-size:14px;color:#000;margin-left: 20px; line-height:inherit;}
+
+/* 头部 的右边部分 input 标签 */
+.top-right input{outline:none;border:none;border-bottom:1px solid #ccc;line-height:28px;margin:15px 0 0 0px;background-color:#f6f7fb;float:left;}
+/* 头部 的右边部分 搜索图标 */
+.nav .search_icon{margin-top:23px;float:left;font-size:16px;}
+/* 头部 的右边部分 搜索图标 旁的 竖线 */
+.top-right .line{color:#ccc;margin:10px 0px 0 17px;font-size:20px;line-height:40px;float:left;}
+/* 头部 的右边部分 用户名 */
+.top-right .right_user{font-size:14px;float:left;border:0px solid #0f0;}
+.user_a{margin-top:8px;float:left;}
+.user_a font{float:left;}
+/* 头部 的右边部分 用户名 的 子菜单 */
+.right_user .user_menu{width:200px;height:160px;background-color:#fff;position:relative;top:0px;z-index:110;}
+.user_menu li{width:205px;height:40px;float:left;line-height:40px;padding:0 20px;}
+.user_menu li:hover{background-color:#ccc;}
+/* 头部 的右边部分 箭头 */
+.top-right .right_user .arrow{margin:8px 0 0 20px;float:left;}
+.right_user:hover .arrow{background-image:url(../images/read/close_icon.png);}
+/* 充值 */
+.top-right .right_recharge{border:0px solid #ccc;height:60px;display:inline-block;float:left;line-height:60px;}
+/* 头部 的右边部分 鼠标移到 用户名 和 充值 上时显示的 字体颜色 */
+.top-right a:hover{color:#e62626;text-decoration:none;}
+/* 头部 的右边部分 鼠标移到 用户名 上时显示的背景颜色 */
+.top-right .right_user:hover{background-color:#fff;}
+
+.right_user .user_menu a:hover{color:#000;}
+
+
+/* 第二部分 内容部分 */
+.content{border:0px solid #f00;margin:20px 0 25px 0;float:left;}
+/* 内容部分的 导航 */
+.content_nav{width:100%;height:24px;border:0px solid #0FF;font-size:13px;line-height:24px;float:left;padding:0 75px;}
+.content_nav a:hover{color:#000;}
+/* 具体显示的内容 */
+.content_book{border:0px solid #0FF;margin-top:15px;float:left;width:104%;}
+/* 内容的 左边列表 */
+.book_left_list{border:0px solid #F0F;padding:0;}
+/* 内容的 左边列表 ul */
+.left_list_nav{font-size:13px;float:left;border:0px solid #F0F;margin-left:0;}
+.left_list_nav a{text-decoration:none;color:#666;}
+/* 内容的 左边列表 ul 的列表 */
+.shujia{width:59px;height:59px;border:1px solid #d8d8d8;background-color:#f6f1e7;float:left;}
+/* 内容的 左边列表 导航 的列表效果 */
+.left_list_nav li:hover{color:#ed4259;}
+/* 内容的 左边列表 导航的 字体图标
+.left_list_nav li span{margin:0;} */
+/* 书架 图标 */
+#left_img{width:15px;height:17px;border:0px solid #0ff;display:inline-block;margin:20% 42% 10%;background-image:url(../images/read/bookcase_icon.png);position:3px 2px;float:left;background-repeat:no-repeat;}
+/* 鼠标放上去图标换背景图片 达到图标换色 */
+.shujia:hover #left_img{background-image:url(../images/read/red_bookcase_icon.png);}
+/* 书页 图标 
+#left_page{width:13px;height:17px;display:inline-block;margin:10px 0 0px 23px;background-image:url(../images/read/page_icon.png);}
+.nav_page:hover #left_page{ background-image:url(../images/read/red_page_icon.png);}*/
+/* 游戏 图标
+#left_game{width:19px;height:17px;display:inline-block;margin:10px 0 0px 20px;background-image:url(../images/read/game_icon.png);}
+.game:hover #left_game{ background-image:url(../images/read/red_game_icon.png);} */
+
+/* 内容的 左边列表 导航的 文字 */
+.left_list_nav li font{margin:0 0 0 30%;float:left;}
+/* 内容的 左边列表 导航的 最后一个 li 的下边框
+.left_list_nav .game{border-bottom:none;} */
+/* 指南 */
+.handbook{width:22px;height:36px;background-color:#b8b5b7;color:#fff;font-size:12px;font-family:微软雅黑;text-align:center;float:right;position:fixed;left:246px;top:507px;}
+
+/* 具体内容 */
+.book_center_content{border:0px solid #f00;font-family:微软雅黑;float:left;}
+/* 具体内容 图书信息 */
+.content_top{border:1px solid #d8d8d8;float:left;background-color:#f6f1e7;padding:1%;}
+.content_title{border:1px solid #d8d8d8;float:left;}
+/* 图书信息 的封面和作者 */
+.title_author{width:100%;height:275px;border:0px solid #d8d8d8;margin:9% 0 0;float:left;}
+/* 图书信息 封面 */
+.title_author dt{width:129px;height:170px;background-color:#fff;border:1px solid #efece5;margin:0 auto;}
+.title_author dt img{width:95%;height:162px;margin:2.3%}
+/* 图书信息 标题 */
+.title_author .title{font-size:31px;margin:20px 20% 5px;text-align:center;}
+/* 图书信息 作者 */
+.title_author .author{font-size:14px;font-family:宋体;color:#999;text-align:center;}
+/* 图书信息 图书类型、上架时间、字数 */
+.title_center{width:100%;border:0px solid #f00;text-align:center;float:left;margin-top:30px;}
+.title_center dd{font-family:宋体;font-size:10px;color:#888;margin-top:5px;}
+/* 图书信息 图书类型 */
+.center_type{width:15%;height:50px;font-size:16px;margin-left:14%;float:left;}
+/* 图书信息 上架时间 */
+.center_time{width:33%;height:50px;font-size:16px;float:left;border:0px solid #f0f;}
+/* 图书信息 字数 */
+.center_serialized{width:28%;height:50px;font-size:16px;float:left;}
+.wu{width:100%;height:55px;border:0px solid #f00;text-align:center;float:left;margin-top:30px;}
+.wu_p1{font-size:16px;color:#000;}
+.wu_p2{font-family:宋体;color:#888;font-size:12px;}
+.wu_p2 a{text-decoration:none; color:#888;}
+/* 版权 */
+.banquan{width:100%;height:55px;text-align:center;float:left;margin-top:40px;}
+.banquan_bq{color:#999;}
+
+/* 章节内容 */
+.content_info{border:1px solid #d8d8d8;float:left;background-color:#f6f1e7;font-family:微软雅黑;margin-top:25px;}
+.content_info p{font-size:17px;text-indent: 2em;line-height: 28px;}
+/* 顶部内容 */
+
+/* 顶部内容 书签 */
+.bookmark{color:#ddd9d0;font-size:35px;float:right;margin-right:15px;display:inline-block;}
+/* 顶部内容 标题 */
+.content_info h3{margin:5% 5% 0;float:left;color:#000;}
+/* 顶部内容 书籍信息 */
+.top_info{border:0px solid #0ff;float:left;margin-top:14px;}
+/* 书名、作者、每章字数 */
+.primary_info{border:0px solid #0ff;font-size:12px;color:#888;float:left;}
+.primary_info a{text-decoration:none;color:#888;float:left;}
+/* 书名 圣墟 */
+.primary_info .info_title{margin:0 5% 0 6%;text-decoration:none;color:#888;}
+/* 书名 旁边的图片 */
+.primary_info .info_title .title{width:13px;height:17px;display:inline-block;margin-right:8px;background-image:url(../images/read/book_icon.png);float:left;}
+.primary_info a:hover .title{background-image:url(../images/read/red_book_icon.png);}
+.primary_info a:hover{color:#ed4259;}
+/* 作者 辰东 */
+.primary_info .author{width:16px;height:16px;display:inline-block;margin-right:8px;background-image:url(../images/read/author_icon.png);float:left;}
+.primary_info a:hover .author{background-image:url(../images/read/red_author_icon.png);}
+/* 每章字数 */
+.num_icon{margin-left:5%;float:left;}
+.primary_info .num{width:50px;height:27px;display:inline-block;font-size:12px;color:#888;float:left;margin-left:7px;}
+/* 时间 */
+.primary_info .time{font-size:18px;color:#888;margin:0px 5px 0 4%;float:left;}
+.primary_info font{line-height:20px;float:left;}
+
+/* 图书评论 */
+.primary_comment{border:0px solid #0FF;margin-right:0px;font-size:12px;line-height:25px;float:left;}
+.primary_comment div{width:22px;height:23px;float:left;margin:0px 10px 0 0;}
+.primary_comment .one_answer{width:22px;height:23px;float:left;margin:0px 10px 0 0;}
+/* 评论有关信息 */
+.primary_comment .comment_icon1{width:600px;height:192px; background-image:url(../images/read/pinglun_icon.png);z-index:200;position:absolute;top:860px;right:130px;}
+/* 关闭 */
+.comment_icon1 .close{float:right;margin:15px;font-size:17px;}
+/* 用户评论 */
+.primary_comment .comment_icon1 .pinlun{width:600px;height:25px;float:left;margin-top:10px;padding:0 25px;font-size:15px;font-family:宋体;color:#000;}
+.comment_icon1 .pinlun .sofa{ display:inline-block;width:17px;height:17px; background-image:url(../images/read/wx_icon.png); float:right;}
+.comment_icon1 .pinlun .sofa:hover{background-image:url(../images/read/red_wx_icon.png);}
+/* 来自 */
+.comment_icon1 .source{width:550px;height:25px;font-size:12px;color:#999;font-family:宋体;margin:10px 25px;}
+.comment_icon1 .source a{ text-decoration:none;color:#3f5a93;}
+.comment_icon1 .source a:hover{color:#2972cc;}
+/* 发表时间 */
+.comment_icon1 .source span{float:right;}
+/* 评论内容 */
+.comment_icon1 input{float:left; outline:none;margin:7px 0 0 25px;display:inline-block;width:480px;height:34px;}
+/* 回复 */
+.comment_icon1 .answer{display:inline-block;width:60px;height:35px;background-color:#bf2c24;float:left;color:#fff;text-align:center;line-height:35px;margin:6px 10px; border-radius:3px;font-family:宋体; font-size:14px;}
+.comment_icon1 .answer:hover{background-color:#ed4259;}
+.primary_comment .icon1{width:22px;height:23px;border-radius:11px;float:left;}
+.primary_comment .pencil{width:34px;height:34px;display:inline-block;float:left;}
+.primary_comment .pencil:hover{background-color:#e5e5e5;}
+.primary_comment .pen{margin-left:7px;}
+
+/* 章节内容 */
+
+/*.book_center_content p{padding:0px 3%;text-indent:2em;line-height:35px;border:0px solid #f00;margin-bottom:15px;font-size:18px;color:#262626;float:left;}*/
+
+/* 赞赏 、 打赏起点币 */
+.info_bottom{width:100%;height:170px;border:0px solid #ccc;margin:50px 0;float:left;}
+/* 赞赏  */
+.info_bottom .zs{text-decoration:none;width:160px;height:60px;display:inline-block;border:0px solid #0f0;margin-left:25%;}
+.info_bottom .zanshang{height:60px;background-color:#bf2c24;border-radius:30px;color:#fff; font-size:25px;font-family:宋体;line-height:60px; text-align:center;}
+.info_bottom .zanshang:hover{background-color:#ed4259;}
+.info_bottom .zanshang font{font-size:10px; position:relative; top:-15px;}
+/* 打赏起点币 */
+.info_bottom .head{width:240px;height:40px;margin:20px 10%;}
+.info_bottom .head a{width:32px;height:34px;float:left;margin-left:15px;}
+
+.info_bottom .head .cat_money{width:219px;height:46px;display:inline-block;background-image:url(../images/read/cat_money.jpg); position:relative;top:-80px;left:-95px;}
+.info_bottom .head .child_money{width:223px;height:48px;display:inline-block; background-image:url(../images/read/child_money.jpg);position:relative;top:-82px;left:-97px;}
+.info_bottom .head .user1_money{width:306px;height:49px;display:inline-block; background-image:url(../images/read/user1_money.jpg);position:relative;top:-82px;left:-109px;}
+.info_bottom .head .user2_money{width:223px;height:48px;display:inline-block;background-image:url(../images/read/user2_money.jpg);position:relative;top:-82px;left:-93px;}
+.info_bottom .head .user3_money{width:225px;height:48px;display:inline-block;background-image:url(../images/read/user3_money.jpg);position:relative;top:-82px;left:-95px;}
+
+.info_bottom .head img{width:32px;height:34px; border-radius:17px;}
+/* 举报 */
+.info_bottom .report{font-size:13px;color:#999;font-family:宋体; float:right;margin-right:60px;}
+.info_bottom .report:hover{color:#ed4259;}
+.info_bottom .report span{font-size:15px;}
+
+/* 上一章、下一章、目录 */
+.content_next{height:70px;border:1px solid #d8d8d8;background-color:#f6f1e7;float:left;margin-top:23px;}
+.content_next a{color:#000;}
+.content_next .last,.catalog,.next{border:0px solid #0ff;float:left;text-align:center;line-height:68px;font-size:17px;border-left:1px solid #ccc;}
+/* 上一章 */
+.content_next .last{color:#ccc;border:none;}
+/* 目录 */
+.content_next .catalog:hover{background-color:#f1ece3;}
+/* 下一章 */
+.content_next .next:hover{background-color:#f1ece3;}
+/*.content_next font{float:left;display:inline-block;color:#ccc;font-size:28px;line-height:70px;border:0px solid #0ff;width:5px;}*/
+
+/* 右边列表 */
+.right{border:0px solid #00f;margin:-15.5% -1.6% 0 0;float:right;}
+/* 右边列表 的列表 */
+.right ul{width:59px;height:59px;border:1px solid #d8d8d8;background-color:#f6f1e7;float:right;text-align:center;position:relative;top:0px;margin:0;}
+.right ul a{color:#333;text-decoration:none;font-size:13px;}
+.right ul a:hover{color:#ed4259;}
+/* 列表 打赏 图片 
+.book_right_list .largess{width:15px;height:17px;display:inline-block;background-image:url(../images/read/largess_icon.png);margin-top:10px;}
+.book_right_list ul li:hover .largess{background-image:url(../images/read/red_largess_icon.png);}*/
+/* 列表 投票 图片 */
+.right .vote{width:15px;height:17px;display:inline-block;background-image:url(../images/read/vote_icon.png);margin-top:10px;}
+.right li:hover .vote{background-image:url(../images/read/red_vote_icon.png);}
+/* 列表 评论 图片 
+.book_right_list .comment{width:17px;height:16px;display:inline-block;background-image:url(../images/read/comment_icon.png);margin-top:10px;}
+.book_right_list ul li:hover .comment{background-image:url(../images/read/red_comment_icon.png);}*/
+/* 列表 箭头 图片 
+.book_right_list .arrow{width:17px;height:14px;display:inline-block;background-image:url(../images/read/arrow_icon.png);margin:20px;}
+.book_right_list ul li:hover .arrow{background-image:url(../images/read/red_arrow_icon.png);}*/
+/* 右边列表 的最后一个列表 
+.book_right_list .right_final{border-bottom:none;}*/
+/* 右边列表 的最下面 
+.right_hong{width:58px;height:60px;border:1px solid #ccc;background-color:#f6f1e7;text-align:center;line-height:60px;} */
+
+

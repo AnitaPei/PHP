@@ -1,0 +1,48 @@
+#top p{
+	text-align: center;
+	font-size: 35px;
+	color: black;
+}
+#top p img{
+	vertical-align: middle;
+	width: 80px;
+	height: 30px;
+}
+#login{
+	border: 1px solid #d5d5d5;
+	width: 700px;
+	height: 460px;
+	margin: 80px auto;
+	font-size: 14px;
+	background-color: #fff;
+	opacity: 0.9;
+
+}
+#login form{
+	width: 500px;
+	height: 380px;
+	margin:50px auto;
+}
+#login form p{
+	position: relative;
+	left: 53px;
+	color: black;
+	font-size: 16px;
+}
+#login form p a{
+	color: orange;
+}
+input{
+	font-size: 16px;
+	tab-index: 6px;
+}
+#login form p [type="submit"]{
+	width: 80px;
+	height: 30px;
+	position: relative;
+	border-radius: 10px;
+	left: 120px;
+	border: none;
+	background-color: #BF0000;
+	cursor: pointer;
+}

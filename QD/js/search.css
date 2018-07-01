@@ -1,0 +1,258 @@
+*{
+    padding:0;
+    margin: 0;
+    list-style: none;
+    font-family: "宋体";
+}
+
+@font-face {/*引用绝对路径下的文字样式*/
+    font-family: my_font;
+    src: url("../fonts/simkai.ttf");
+}
+.clearfloat{/*清除浮动*/
+    clear: both;
+}
+/*左上部分 分类开始*/
+#chose_color{
+    background-color: #ED4259;
+}
+.left_one{
+    overflow: auto;/*有内容自动填充*/
+    background-color:#F7F6F2;
+    font-size:10px;
+    height:365px;
+}
+.content_left .left_one dt{
+    float: left;
+}
+.content_left .left_one dd{
+    float: left;
+    margin-left: 10px;
+    word-spacing: 15px;/*英文字符之间的间距*/
+    letter-spacing: 1px;/*中文字符之间的间距*/
+}
+.content_left .left_one dl{
+    overflow: auto;
+    margin: 20px 0 0 10px;
+    font-size: 13px;
+}
+.content_left .left_one dd a{
+    color: black;;
+    text-decoration: none;
+}
+.content_left .left_one .color_red span{/*数字大小*/
+    font-size: 12px;
+    color:#B5B5B5;
+}
+/*左上部分 分类结束*/
+
+/*人气排序导航栏开始*/
+.content_left .left_two li{/*人气排序导航栏样式*/
+    padding-right:15px;
+    float: left;
+}
+.content_left .left_two a{/*人气排序导航栏a标签样式*/
+    text-decoration: none;
+    color: #A6A6A6;
+    font-size: 12px;
+}
+/*.content_left .left_two ul{原中间导航栏样式
+    margin:10px 0 0 0;
+    line-height: 40px;
+    height:40px;
+    background-color:#F7F6F2;
+}*/
+.content_left .left_two{
+    margin:10px 0 0 0;
+}
+#about_book{/*相关作品样式*/
+    margin:10px 0 0 0;
+    font-size: 12px;
+    color:#A6A6A6;;
+}
+#about_book span{/*相关作品数字样式*/
+    font-size: 14px;
+    color:black;
+}
+/*人气排序导航栏结束*/
+/*书籍列表 开始*/
+.content_left .left_three{
+    overflow: auto;
+    border: 1px solid white;
+    border-bottom: 1px solid #E6E6E6;
+}
+.content_left .left_three .img1{/*图片div大小*/
+    width:100px;
+    height:190px;
+    float: left;
+    margin-right:10px;
+    overflow: hidden;
+
+}
+.content_left .left_three .img1 img{/*书籍图片大小及图片位置*/
+    width:100px;
+    height:140px;
+    margin-top: 25px;
+    /*图片阴影样式*/
+    border: 1px solid #696;/*!*边框样式*!*/
+    -webkit-box-shadow: #666666 1px 1px 10px;
+    -moz-box-shadow: #666666 1px 1px 10px;
+    box-shadow: #666666 1px 1px 10px;
+}
+.left_three .text_one{
+    margin-top: 25px;
+}
+.left_three .text_one .text_title a{/*标题a标签样式*/
+    padding-top: 5px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.left_three .text_one .text_info img{/*头像大小*/
+    width:15px;
+    height:15px;
+}
+.left_three .text_one .text_info a{/*头像后作者、分类*/
+    font-size: 12px;
+    color: #A6A6A6;
+    text-decoration: none;
+}
+.left_three .text_one .text_info{/*头像后 连载中 样式*/
+    padding-top: 5px;
+    font-size: 12px;
+    color: #A6A6A6;
+}
+.left_three .text_one .text_con{/*书籍简介样式*/
+    padding-top: 5px;
+    font-size: 15px;
+    color: #666666;
+}
+.left_three .text_one .text_a a{/*最新更新样式*/
+    padding-top: 5px;
+    font-size: 12px;
+    text-decoration: none;
+}
+.left_three .text_a span{/*更新时间样式设置*/
+    font-size: 12px;
+    color: #A6A6A6;
+}
+.three_right .three_right_text{/*总数字 总点击 总推荐字体样式*/
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+}
+.three_right{/*书籍列表中 */
+    margin-top: 25px;
+}
+.three_right .three_right_button .three_right_button_one{/*书籍详情按钮*/
+    text-align: center;
+    font-size: 15px;
+    line-height: 35px;
+    width: 100px;
+    height:35px;
+    background-color:#BF2C24;
+    float: left;
+    margin-right:20px;
+}
+.three_right .three_right_button a{/*书籍详情按钮 a标签样式*/
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.three_right .three_right_button .three_right_button_two{/*加入书架按钮*/
+     color:#2972CC;
+     text-align: center;
+     font-size: 15px;
+     line-height: 35px;
+     width: 100px;
+     height:35px;
+     border: 1px solid #2972CC;
+     float: left;
+ }
+.three_right .three_right_button .three_right_button_two a{/*加入书架按钮 a标签样式*/
+    color:#2972CC;
+    text-decoration: none;
+}
+.three_right .three_right_button{/*调整两处按钮位置*/
+    padding: 30px 0 30px 0;
+}
+/*书籍列表结束*/
+/*右侧列表*/
+.content_right .content_right_list_one h4{/*右侧列表标题样式*/
+    width:250px;
+    height:30px;
+    font-size:18px;
+    font-weight:600;
+    border-bottom:1px solid;
+    margin: 0;
+}
+.content_right .content_right_list_one .img2{/*书籍图片大小及样式*/
+    width:75px;
+    height: 100px;
+    margin-right:10px;
+    float: left;
+}
+.content_right .content_right_list_one .img_info{/*书籍简介位置调整*/
+    float: left;
+}
+.content_right .content_right_list_one .img_info img{/*头像大小设置*/
+    width:15px;
+    height:15px;
+}
+.content_right .content_right_list_one .img_info .img_info_one{/*书名样式*/
+    font-size: 18px;
+    text-decoration: none;
+    color: black;;
+}
+.content_right .content_right_list_one .img_info .img_info_two{/*作者样式*/
+    font-size: 12px;
+    text-decoration: none;
+    color: #666666;
+}
+.content_right .content_right_list_one .img_info .img_info_three{/*作者样式*/
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+.content_right .right_list{/*下边框*/
+    padding: 15px 0;
+    width: 250px;
+    height: 130px;
+    border-bottom: 1px solid #E6E6E6;
+}
+.content_right .right_list_bottom{/*下边框*/
+    padding: 15px 0;
+    width: 250px;
+    height: 130px;
+    border-bottom: none;
+}
+/*尾部样式开始*/
+.http_name{/*尾部网站链接居中*/
+    color:black;
+    font-size: 12px;
+    text-align: center;
+}
+.http_name a{/*尾部网站链接居中及a标签样式*/
+    text-decoration: none;
+    padding: 0 5px;
+    color:black;
+    font-size: 12px;
+}
+.foot_center{/*联系我们*/
+    text-align: center;
+}
+.foot_center a{/*联系我们a标签样式*/
+    padding: 0 5px;
+    text-decoration: none;
+    color:black;
+    font-size: 12px;
+}
+#btn{/*返回顶部样式*/
+    color:#ED4259;
+}
+.foot_info{
+    margin:5px 0 ;
+    text-align: center;
+    font-size:12px;
+    color: #A6A6A6;
+}
+/*尾部样式结束*/

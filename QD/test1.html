@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <style>
+                *{ padding:0; margin:0;}
+                .colockbox{width:250px;height:30px;border: 1px #ccc solid; background-color:#fff;color:#00f;}
+                .colockbox span{float:left;display:block;width:50px;height:29px;line-height:29px;font-size:20px;text-align:center;color:#00f;}
+        </style>
+        <script type="text/javascript">
+                $(function(){
+                        countDown("2017/3/1 10:00:00","#colockbox1");
+                });
+                function countDown(time,id){
+                        var day_elem = $(id).find('.day');
+                        var hour_elem = $(id).find('.hour');
+                        var minute_elem = $(id).find('.minute');
+                        var second_elem = $(id).find('.second');
+                        var end_time = new Date(time).getTime(),//月份是实际月份-1
+                                sys_second = (end_time-new Date().getTime())/1000;
+                        var timer = setInterval(function(){
+                                if (sys_second > 1) {
+                                        sys_second -= 1;
+                                        var day = Math.floor((sys_second / 3600) / 24);
+                                        var hour = Math.floor((sys_second / 3600) % 24);
+                                        var minute = Math.floor((sys_second / 60) % 60);
+                                        var second = Math.floor(sys_second % 60);
+                                        day_elem &&$(day_elem).text(day+"天");//计算天
+                                        $(hour_elem).text(hour+"时"<10?"0"+hour:hour+"时");//计算小时
+                                        $(minute_elem).text(minute+"分"<10?"0"+minute:minute+"分");//计算分钟
+                                        $(second_elem).text(second+"秒"<10?"0"+second:second+"秒");//计算秒杀
+                                } else {
+                                        clearInterval(timer);
+                                }
+                        }, 1000);
+                }
+        </script>
+</head>
+<body>
+<div class="colockbox" id="colockbox1"> <span class="day">00天</span><span class="hour">00时</span> <span class="minute">00分</span> <span class="second">00秒</span> </div>
+</body>
+</html>
